@@ -34664,6 +34664,6 @@ class ValidationError extends Error {
 
 action().catch((error) => {
   // Action threw an error. Fail the action with the error message.
-  core.setFailed(`${error.message} ${JSON.stringify(error)}`);
+  core.setFailed(`${error.message} ${error}`);
 });
 
